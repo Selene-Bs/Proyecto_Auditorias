@@ -11,7 +11,7 @@ import sys
 
 import streamlit as st
 
-RAIZ_PROYECTO = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+RAIZ_PROYECTO = os.path.dirname(os.path.abspath(__file__))
 if RAIZ_PROYECTO not in sys.path:
     sys.path.insert(0, RAIZ_PROYECTO)
 
