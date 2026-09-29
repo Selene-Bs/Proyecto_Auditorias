@@ -1,0 +1,26 @@
+# Entornos y cachés de Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Datos generados (se regeneran con src/data/generate_synthetic_data.py)
+# Si vas a versionar un dataset real fijo, quita estas líneas.
+data/*.csv
+
+# Modelos serializados grandes (si se llegan a exportar con joblib/pickle)
+*.pkl
+*.joblib
+
+# Sistema operativo / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Notebooks: checkpoints
+.ipynb_checkpoints/
